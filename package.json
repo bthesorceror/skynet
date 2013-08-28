@@ -20,7 +20,7 @@
     "irc": "~0.3.6",
     "rudder": "0.0.4",
     "journeyman": "0.0.8",
-    "lightning_strike": "0.0.2",
+    "lightning_strike": "0.0.3",
     "rivulet": "0.0.7",
     "mustache": "~0.7.2"
   },
