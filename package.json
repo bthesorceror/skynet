@@ -1,0 +1,31 @@
+{
+  "name": "skynet",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-build": "browserify client/channel.js -o static/javascripts/channel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bthesorceror/skynet.git"
+  },
+  "author": "Brandon Farmer",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/bthesorceror/skynet/issues"
+  },
+  "dependencies": {
+    "irc": "~0.3.6",
+    "rudder": "0.0.4",
+    "journeyman": "0.0.8",
+    "lightning_strike": "0.0.2",
+    "rivulet": "0.0.7",
+    "mustache": "~0.7.2"
+  },
+  "devDependencies": {
+    "browserify": "~2.29.0",
+    "dotenv": "0.0.3"
+  }
+}
