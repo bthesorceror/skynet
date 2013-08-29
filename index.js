@@ -32,6 +32,7 @@ rudder.get("/channels/([a-zA-Z0-9.]+)", function(req, res, channel) {
 });
 
 journeyman.use(rudder.middleware());
+
 journeyman.use(function(req, res, next) {
   res.render = function(filepath, params) {
     var fullpath = path.join(__dirname, 'views', filepath + '.mustache');
@@ -45,8 +46,10 @@ journeyman.use(function(req, res, next) {
   }
   next();
 });
+
 journeyman.use(lightning.middleware());
 journeyman.use(rivulet.middleware());
+
 journeyman.use(function(req, res, next) {
   if (req.url === "/favicon.ico")
     res.end();
