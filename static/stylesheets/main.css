@@ -2,8 +2,34 @@ body {
   background-color: #EEE;
 }
 div#container {
-  margin: auto;
+  margin-left: 320px;
   width: 640px;
+}
+
+#sidebar {
+  width: 300px;
+  margin-left: 10px;
+  float: left;
+  min-height: 640px;
+}
+
+#sidebar h2 {
+  text-align: center;
+}
+
+#sidebar ul#highlighters {
+  list-style-type: none;
+}
+
+#sidebar ul#highlighters li {
+  margin-left: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+span.highlight {
+  background-color: #00F;
+  color: #FFF;
 }
 
 #container ul#messages {
