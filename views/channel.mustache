@@ -6,22 +6,24 @@
     <script type='text/javascript' src='/rivulets/event-source.js'></script>
   </head>
   <body>
-    <div id='sidebar'>
-      <h2>Highlighting</h2>
-      <form id="highlight_form">
-        <dl>
-          <dd>
-            <input type='text' name='matcher' />
-            <input type='submit' value='Add' />
-          </dd>
-        </dl>
-      </form>
-      <ul id='highlighters'>
-      </ul>
-    </div>
     <div id='container'>
-      <h1>{{channel}}</h1>
-      <ul id='messages'></ul>
+      <div id='sidebar'>
+        <h2>Highlighting</h2>
+        <form id="highlight_form">
+          <dl>
+            <dd>
+              <input type='text' name='matcher' />
+              <input type='submit' value='Add' />
+            </dd>
+          </dl>
+        </form>
+        <ul id='highlighters'>
+        </ul>
+      </div>
+      <div id='channel'>
+        <h1>{{channel}}</h1>
+        <ul id='messages'></ul>
+      </div>
     </div>
     <script type='text/javascript' src='/static/javascripts/channel.js'></script>
   </body>

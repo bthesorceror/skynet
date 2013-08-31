@@ -1,24 +1,33 @@
 body {
   background-color: #EEE;
 }
+
 div#container {
-  margin-left: 320px;
+  width: 900px;
+  height: 640px;
+  margin-top: 10px;
+  margin: auto;
+}
+div#channel {
+  float: right;
   width: 640px;
 }
 
 #sidebar {
-  width: 300px;
+  width: 150px;
   margin-left: 10px;
   float: left;
   min-height: 640px;
+  padding-top: 45px;
 }
 
-#sidebar h2 {
-  text-align: center;
+#sidebar form dd {
+  margin-left: 0;
 }
 
 #sidebar ul#highlighters {
   list-style-type: none;
+  padding-left: 0;
 }
 
 #sidebar ul#highlighters li {
@@ -34,6 +43,7 @@ span.highlight {
 
 #container ul#messages {
   list-style-type: none;
+  margin-top: 0;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
@@ -42,12 +52,8 @@ span.highlight {
   border-width: 1px;
   border-color: #CCC;
   height: 600px;
-  overflow: scroll;
+  overflow-y: scroll;
   background-color: #FFF;
-}
-
-#container h1 {
-  text-align: center;
 }
 
 #container ul#messages li {
@@ -57,4 +63,17 @@ span.highlight {
   border-bottom-style: dashed;
   border-bottom-width: 1px;
   border-bottom-color: #000;
+}
+
+#container h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+}
+
+#sidebar h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
