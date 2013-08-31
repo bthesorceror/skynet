@@ -50,10 +50,8 @@ journeyman.use(function(req, res, next) {
 journeyman.use(lightning.middleware());
 journeyman.use(rivulet.middleware());
 
-if (environment == 'development') {
-  var ui = new Lightning(path.join(__dirname, 'ui'), { prefix: '/ui' });
-  journeyman.use(ui.middleware());
-}
+if (environment == 'development')
+  journeyman.use((new Lightning(path.join(__dirname, 'ui'), { prefix: '/ui' })).middleware());
 
 journeyman.use(function(req, res, next) {
   if (req.url === "/favicon.ico")
