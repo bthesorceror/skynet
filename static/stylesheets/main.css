@@ -42,7 +42,7 @@ span.highlight {
   border-width: 1px;
   border-color: #CCC;
   height: 600px;
-  overflow: hidden;
+  overflow: scroll;
   background-color: #FFF;
 }
 
