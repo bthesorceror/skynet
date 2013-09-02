@@ -15,7 +15,7 @@ highlighter.on('highlight', function(val, regex, list) {
   var template    = "<li><b>{{nick}}</b> -- {{{message}}}</li>";
   var channel     = document.querySelector('meta[name="channel"]').getAttribute('content');
   var eventsource = new EventSource('/rivulets/messages_' + channel);
-  var list        = document.querySelector('ul#messages');
+  var list        = document.querySelector('ul.messages');
 
   function addMessage(data) {
     var rendered = Mustache.render(template, data);
