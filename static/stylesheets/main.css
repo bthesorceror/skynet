@@ -41,7 +41,7 @@ span.highlight {
   color: #FFF;
 }
 
-#container ul#messages {
+ul.messages {
   list-style-type: none;
   margin-top: 0;
   padding-left: 10px;
@@ -51,12 +51,16 @@ span.highlight {
   border-style: solid;
   border-width: 1px;
   border-color: #CCC;
-  height: 600px;
   overflow-y: scroll;
   background-color: #FFF;
+  height: 400px;
 }
 
-#container ul#messages li {
+#container ul.messages {
+  height: 600px;
+}
+
+ul.messages li {
   margin-left: 0px;
   margin-bottom: 10px;
   padding-bottom: 5px;
@@ -76,4 +80,19 @@ span.highlight {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+#channels {
+  width: 820px;
+  margin: auto;
+}
+
+#channels .channel {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 400px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: block;
+  float: left;
 }
