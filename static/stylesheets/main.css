@@ -23,6 +23,20 @@ div#channel {
 
 #sidebar form dd {
   margin-left: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+#sidebar form input {
+  font-size: 14pt;
+  line-height: normal;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#sidebar form input[type='text'] {
+  display: inline;
+  width: 150px;
 }
 
 #sidebar ul#highlighters {
