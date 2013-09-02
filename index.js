@@ -22,7 +22,19 @@ skynet.on('error', function(error) {
   console.log(error);
 });
 
-skynet.setRivulet(rivulet);
+skynet.on('joined', function(channel) {
+  rivulet.send('all', { action: 'join', channel: channel });
+});
+
+skynet.on('channel_message', function(channel, nick, message) {
+  rivulet.send('messages_' + channel, { nick: nick, message: message });
+  rivulet.send('all', {
+    action: 'message',
+    channel: channel,
+    nick: nick,
+    message: message
+  });
+});
 
 rudder.get("/channels/([a-zA-Z0-9.]+)", function(req, res, channel) {
   res.writeHead(200);
