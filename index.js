@@ -43,6 +43,11 @@ rudder.get("/channels/([a-zA-Z0-9.]+)", function(req, res, channel) {
   });
 });
 
+rudder.get("/", function(req, res) {
+  res.writeHead(200);
+  res.render('index', { channels: skynet.channels });
+});
+
 journeyman.use(rudder.middleware());
 
 journeyman.use(function(req, res, next) {

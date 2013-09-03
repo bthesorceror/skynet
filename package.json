@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client-build": "browserify client/channel.js -o static/javascripts/channel.js"
+    "client-build": "browserify client/channel.js -o static/javascripts/channel.js && browserify client/index.js -t brfs -o static/javascripts/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "browserify": "~2.29.0",
-    "dotenv": "0.0.3"
+    "dotenv": "0.0.3",
+    "brfs": "0.0.7"
   }
 }
