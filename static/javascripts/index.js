@@ -5,11 +5,11 @@ var fs = require('fs');
 (function() {
   var template    = "<li><b>{{nick}}</b> -- {{{message}}}</li>";
   var eventsource = new EventSource('/rivulets/all');
-  var channel_template = "<section class='channel' id='{{channel}}'>\n  <h1>{{channel}}</h1>\n  <ul class='messages'></ul>\n</section>\n";
+  var channel_template = "<section class='channel' data-name='{{channel}}'>\n  <h1>{{channel}}</h1>\n  <ul class='messages'></ul>\n</section>\n";
   var container = document.querySelector('section#channels');
 
   function addMessage(data) {
-    var list = document.querySelector('section#' + data.channel + ' ul.messages');
+    var list = document.querySelector('section[data-name="' + data.channel + '"] ul.messages');
     var rendered = Mustache.render(template, data);
     list.innerHTML = rendered + list.innerHTML;
   }

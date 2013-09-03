@@ -8,7 +8,7 @@ var fs = require('fs');
   var container = document.querySelector('section#channels');
 
   function addMessage(data) {
-    var list = document.querySelector('section#' + data.channel + ' ul.messages');
+    var list = document.querySelector('section[data-name="' + data.channel + '"] ul.messages');
     var rendered = Mustache.render(template, data);
     list.innerHTML = rendered + list.innerHTML;
   }
