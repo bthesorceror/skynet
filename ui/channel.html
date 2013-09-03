@@ -6,21 +6,17 @@
     <script type='text/javascript' src='/rivulets/event-source.js'></script>
   </head>
   <body>
-  <div id='container'>
-    <div id='sidebar'>
-      <h2>Highlighting</h2>
+  <section id='container'>
+    <h1>TestChannel</h1>
+    <aside>
+      <h3>Highlighting</h2>
       <form id="highlight_form">
-        <dl>
-          <dd>
-            <input type='text' name='matcher' />
-          </dd>
-        </dl>
+        <input type='text' name='matcher' />
       </form>
       <ul id='highlighters'>
       </ul>
-    </div>
-    <div id='channel'>
-      <h1>TestChannel</h1>
+    </aside>
+    <section id='channel'>
       <ul class='messages'>
         <li>
           <b>capox</b> -- filesystem
@@ -95,8 +91,8 @@
           <b>Kingdutch</b> -- What's the best way to tie non-web tasks (not triggered by http requests) like parsing an RSS feed into an express app?
         </li>
       </ul>
-    </div>
-  </div>
+    </section>
+  </section>
     <script type='text/javascript' src='/static/javascripts/channel.js'></script>
   </body>
 </html>

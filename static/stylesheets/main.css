@@ -13,41 +13,41 @@ div#channel {
   width: 640px;
 }
 
-#sidebar {
+aside {
   width: 150px;
   margin-left: 10px;
+  margin-right: 10px;
   float: left;
-  min-height: 640px;
-  padding-top: 45px;
 }
 
-#sidebar form dd {
-  margin-left: 0;
-  width: 100%;
-  vertical-align: middle;
+aside h3 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
 }
 
-#sidebar form input {
-  font-size: 14pt;
+aside form input {
+  font-size: 12pt;
   line-height: normal;
   box-sizing: border-box;
   margin: 0;
 }
 
-#sidebar form input[type='text'] {
+aside form input[type='text'] {
   display: inline;
   width: 150px;
 }
 
-#sidebar ul#highlighters {
+aside ul#highlighters {
   list-style-type: none;
   padding-left: 0;
+  font-size: 12pt;
 }
 
-#sidebar ul#highlighters li {
+aside ul#highlighters li {
   margin-left: 0px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 span.highlight {
@@ -78,9 +78,13 @@ ul.messages li {
   margin-left: 0px;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  border-bottom-style: dashed;
+  border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-bottom-color: #000;
+}
+
+ul.messages li b {
+  font-size: 12pt;
 }
 
 #container h1 {
@@ -88,12 +92,6 @@ ul.messages li {
   margin: 0;
   padding: 0;
   height: 45px;
-}
-
-#sidebar h2 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 #channels {
