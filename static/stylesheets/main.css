@@ -2,17 +2,6 @@ body {
   background-color: #EEE;
 }
 
-div#container {
-  width: 900px;
-  height: 640px;
-  margin-top: 10px;
-  margin: auto;
-}
-div#channel {
-  float: right;
-  width: 640px;
-}
-
 aside {
   width: 150px;
   margin-left: 10px;
@@ -87,19 +76,18 @@ ul.messages li b {
   font-size: 12pt;
 }
 
-#container h1 {
+section#container h1 {
   text-align: center;
   margin: 0;
   padding: 0;
   height: 45px;
 }
 
-#channels {
-  width: 820px;
-  margin: auto;
+section#channels h1 {
+  text-align: center;
 }
 
-#channels .channel {
+section#channels .channel {
   box-sizing: border-box;
   padding: 10px;
   width: 400px;
